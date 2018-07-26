@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prueba de JavaScript</title>
+	
+<!--Aquí va el estilo-->	
+    <link rel="stylesheet" href="mystyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<!--Aquí van los scripts-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!--Utilizando sistema de grids se debe dividir el viewport en 2 columnas (Se
+recomienda Bootstrap):
+En la columna de la izquierda:
+Crear un campo de texto donde el usuario pueda ingresar el texto
+del tweet
+Agregar un botón para confirmar la creación
+Incluir una foto de perfil donde se pueda agregar la foto del
+creador.
+En la columna de la derecha: Los tweets deben ser enlistados en bloques.
+(Cada tweet un nuevo row)
+Cada tweet de la lista debe tener un link que contenga un icono (❤ ) para dar like,
+un contador de likes (por defecto es cero), un botón para eliminar el tweet y la foto
+de perfil del creador.
+Al darle like al tweet:
+El icono debe cambiar de color (destacando que ya se le ha hecho click).
+El contador de likes debe incrementarse en 1.
+En el caso de hacer dos o más clicks, el contador de likes debe seguir
+incrementándose.
+Se debe mantener el cambio de color desde el segundo click en adelante.
+El botón de eliminar debe remover el tweet de la lista.
+Se recomienda usar FontAwesome para los iconos.-->
+<body>
+
+<!--Header-->
+    <header>
+        <div class="jumbotron">
+            <img src="" alt="">
+            <h2>Mini Twitter</h2>
+        </div>
+    </header>
+
+<!--Contenido primera columna-->
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <div class="profile">
+                <img src="" alt="">
+                <h4>Este es mi nombre</h4>
+            </div>
+            <div class="formulario">
+                <div class="ventana_texto">
+                    <h5>Aquí escribiré mi tweet</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi, cumque et sapiente quaerat ex nemo voluptatum, reiciendis consectetur suscipit pariatur iste obcaecati in ipsum saepe magnam autem culpa assumenda?</p>
+                </div>
+            </div>
+            <h2 class="tweetear">Escribe tu tweet</h2>
+        
+            <!-- Formulario -->       
+            <form action="#" class="casilla">
+                <textarea name="" class="casilla__escribe-tu-tweet"></textarea>
+                <input type="submit" class="btn btn__casilla" value="Mini Tweetear">
+            </form>
+        </div>
+            
+        <div class="col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+            <div class="entradas__titulo">
+                <img src="" alt="">
+                <h4>Este es el muro</h4>
+            </div>
+            <div class="entradas">
+                <h5>Aquí irán los nuevos tweets</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi, cumque et sapiente quaerat ex nemo voluptatum, reiciendis consectetur suscipit pariatur iste obcaecati in ipsum saepe magnam autem culpa assumenda?</p>
+            </div>        
+        </div>
+    </div>
+            
+
+    <script src="myscript.js"></script>
+</body>
+</html>
