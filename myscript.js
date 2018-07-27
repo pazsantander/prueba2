@@ -16,7 +16,6 @@ $(document).ready(function(){
             + "<div class='entrada__texto'>"
             + text
             + "</div>"
-            + "<div class='entrada__interactivo'>"
             + "<a class='entrada__borrar'>"
             + "<i class='fas fa-trash-alt'>"
             + "</i>"
@@ -26,7 +25,6 @@ $(document).ready(function(){
             + "<span class='entrada__count'> 0 </span>"
             + "</i>"
             + "</a>"
-            + "</div>"
             + "</div>");
     
     //reset form
