@@ -17,34 +17,54 @@
 .entrada {
     width: 100%;
     height: 150px;
-    border: solid 3px #5a81cac4;;
+    border: solid 3px #5a81cac4;
     background-color: rgb(247, 247, 247);
     border-radius: 10px;
     padding: 12px;
     margin: 6px 12px 6px 0;
     float: left;
+    overflow: scroll;
+}
+
+.entrada__interactivo {
+    width: 50%
+
 }
 
 .entrada img {
   float: left;
-  border: solid 2px yellowgreen;
+  max-width: 100px;
   margin: 0 15px 5px 0; 
 }
 
 .entrada__like {
-  color: #ccc;
-  display: block;
+  color: #5a81cac4;
   padding: 28px 0 0 20px;
-  text-align: center;
   transition: all .35s ease-out;
   width: 120px;
+  float: left;
+}
+
+.entrada__texto {
+  text-align: left;
+  margin: 5px;
+  overflow: hidden;
+  max-height: 140px;;
 }
 
 .entrada__like--red {
-  color: tomato;
+  color: rgb(247, 20, 198);
 }
 
 .casilla__imagen {
   width: 120px;
   margin: 5px; 
+  float: left;
+}
+
+.entrada__borrar {
+  padding: 28px 0 0 20px;
+  transition: all .35s ease-out;
+  width: 120px;
+  float: left;
 }

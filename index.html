@@ -54,16 +54,7 @@ Se recomienda usar FontAwesome para los iconos.-->
 <!--Contenido primera columna-->
     <div class="row">
         <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-            <div class="profile">
-                <img src="" alt="">
-                <h4>Este es mi nombre</h4>
-            </div>
-            <div class="formulario">
-                <div class="ventana_texto">
-                    <h5>Aquí escribiré mi tweet</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi, cumque et sapiente quaerat ex nemo voluptatum, reiciendis consectetur suscipit pariatur iste obcaecati in ipsum saepe magnam autem culpa assumenda?</p>
-                </div>
-            </div>
+            
             <h2 class="tweetear">Escribe tu tweet</h2>
         
             <!-- Formulario -->       
@@ -71,12 +62,15 @@ Se recomienda usar FontAwesome para los iconos.-->
                 
                 <label for="imagen" class="casilla_nuevo-tweet--select">
                     <img src="images/huevo.png" alt="" class="casilla__imagen">
-                    <select name="imagen" id="imagen" class="casilla__select">
-                        <option value="huevo.png">Selecciona una imagen</option>
-                        <option value="dog.jpg">Perrito</option>
-                        <option value="cats.jpg">Gatitos</option>
-                        <option value="mouse.jpg">Lauchita</option>                 
-                    </select>
+                    <div>
+                        <select name="imagen" id="imagen" class="casilla__select">
+                            <option value="huevo.png">Selecciona una imagen</option>
+                            <option value="dog.jpg">Perrito</option>
+                            <option value="cats.jpg">Gatitos</option>
+                            <option value="mouse.jpg">Lauchita</option>                 
+                        </select>
+                    </div>
+                   
                 </label>
                 
                 <label for="tweet" class="casilla_nuevo-tweet">

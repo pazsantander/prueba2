@@ -3,10 +3,16 @@ $(document).ready(function(){
     //Crear mensaje
     $(".casilla").on ("submit", function(e){
         var text = $(".casilla__escribe-tu-tweet").val();
+        var imagen = $("#imagen").val();
         event.preventDefault();
         $(".entradas").append(
             "<div class='entrada'>"
-            + "<img class='entrada__imagen' src='' alt='aquí va una foto'>"
+            + "<div class= 'entrada__perfil'>"
+            //poner foto seleccionada en el perfil
+            + "<img class='entrada__imagen' src='images/" 
+            + imagen 
+            + "' alt='aquí va una foto'>"
+            + "</div>"
             + text
             + "<a class='entrada__borrar'>"
             + "<i class='fas fa-trash-alt'>"
@@ -44,9 +50,8 @@ $(document).ready(function(){
 
     //Elegir foto de perfil
     $("#imagen").on("change", function(){
-        $(".casilla__select img").attr("src", "/images" + $(this).val());
+        $(".casilla__imagen").attr("src", "images/" + $(this).val());
     });
-
 
 });
 
