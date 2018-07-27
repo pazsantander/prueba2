@@ -23,7 +23,6 @@
     padding: 12px;
     margin: 6px 12px 6px 0;
     float: left;
-    overflow: scroll;
 }
 
 .entrada__interactivo {
@@ -39,9 +38,8 @@
 
 .entrada__like {
   color: #5a81cac4;
-  padding: 28px 0 0 20px;
+  padding: 5px;
   transition: all .35s ease-out;
-  width: 120px;
   float: left;
 }
 
@@ -49,7 +47,8 @@
   text-align: left;
   margin: 5px;
   overflow: hidden;
-  max-height: 140px;;
+  max-height: 70px;
+  overflow: scroll;
 }
 
 .entrada__like--red {
@@ -63,8 +62,13 @@
 }
 
 .entrada__borrar {
-  padding: 28px 0 0 20px;
+  padding: 5px;
   transition: all .35s ease-out;
-  width: 120px;
-  float: left;
+  float: right;
+}
+
+.casilla {
+  align-content: center;
+  display: block;
+  display: inline;
 }
