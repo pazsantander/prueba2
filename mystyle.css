@@ -58,7 +58,7 @@
 .casilla__imagen {
   width: 120px;
   margin: 5px; 
-  float: left;
+  display: block;
 }
 
 .entrada__borrar {
@@ -70,5 +70,12 @@
 .casilla {
   align-content: center;
   display: block;
-  display: inline;
+}
+
+.casilla_nuevo-tweet--select {
+  display: block;
+}
+
+.btn__casilla {
+  display: block;
 }
