@@ -68,8 +68,24 @@ Se recomienda usar FontAwesome para los iconos.-->
         
             <!-- Formulario -->       
             <form action="#" class="casilla">
-                <textarea name="" class="casilla__escribe-tu-tweet"></textarea>
-                <input type="submit" class="btn btn__casilla" value="Mini Tweetear">
+                
+                <label for="imagen" class="casilla_nuevo-tweet--select">
+                    <img src="images/huevo.png" alt="" class="casilla__imagen">
+                    <select name="imagen" id="imagen" class="casilla__select">
+                        <option value="huevo.png">Selecciona una imagen</option>
+                        <option value="dog.jpg">Perrito</option>
+                        <option value="cats.jpg">Gatitos</option>
+                        <option value="mouse.jpg">Lauchita</option>                 
+                    </select>
+                </label>
+                
+                <label for="tweet" class="casilla_nuevo-tweet">
+                    <textarea name="" class="casilla__escribe-tu-tweet"></textarea>
+                    <input type="submit" class="btn btn__casilla" value="Mini Tweetear">
+                </label>
+                
+
+        
             </form>
         </div>
             

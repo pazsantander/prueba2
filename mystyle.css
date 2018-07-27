@@ -31,15 +31,6 @@
   margin: 0 15px 5px 0; 
 }
 
-.entrada__borrar {
-  width: 25px;
-  height: 25px;
-  border: solid 2px #5a81cac4;
-  border-radius: 25px;
-  background-color: yellow;
-  float: right;
-}
-
 .entrada__like {
   color: #ccc;
   display: block;
@@ -51,4 +42,9 @@
 
 .entrada__like--red {
   color: tomato;
+}
+
+.casilla__imagen {
+  width: 120px;
+  margin: 5px; 
 }

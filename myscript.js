@@ -8,8 +8,10 @@ $(document).ready(function(){
             "<div class='entrada'>"
             + "<img class='entrada__imagen' src='' alt='aquí va una foto'>"
             + text
-            + "<div class='entrada__borrar'>"
-            + "</div>"
+            + "<a class='entrada__borrar'>"
+            + "<i class='fas fa-trash-alt'>"
+            + "</i>"
+            + "</a>"
             + "<a class='entrada__like'>"
             + "<i class='fas fa-heart'>"
             + "<span class='entrada__count'> 0 </span>"
@@ -40,7 +42,10 @@ $(document).ready(function(){
         return false;
     });
 
-    
+    //Elegir foto de perfil
+    $("#imagen").on("change", function(){
+        $(".casilla__select img").attr("src", "/images" + $(this).val());
+    });
 
 
 });
